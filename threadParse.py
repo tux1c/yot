@@ -16,8 +16,8 @@ else:
 
 
 # JSON representations of threads and indexes are exposed at the following URLs:
-#     http(s)://api.4chan.org/board/res/threadnumber.json
-#     http(s)://api.4chan.org/board/pagenumber.json (0 is main index)
+#     http(s)://a.4cdn.org/board/thread/threadnumber.json
+#     http(s)://a.4cdn.org/board/pagenumber.json (1 is main index)
 
 
 
@@ -44,7 +44,7 @@ class Index(object):
 		self.jsonData = None
 		self.indexData = None
 		self.boardAbbr = ""
-		self.pageNum = 0
+		self.pageNum = 1
 		self.indexJsonUrl = ""
 		self.threadList = []
 

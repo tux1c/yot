@@ -94,7 +94,7 @@ def printIndex(index, prefs):
 			opTextClean = "< no text >"
 		
 		if imgEnable and 'tim' in op:
-			imgUrl = "http://images.4chan.org/" + thread.getBoard() + "/src/" + str(op['tim']) + op['ext']
+			imgUrl = "http://i.4cdn.org/" + thread.getBoard() + "/src/" + str(op['tim']) + op['ext']
 			print aaFuncs.urlToAscii(imgUrl, prefs)
 		
 		print wrap( \
@@ -109,7 +109,7 @@ def printIndex(index, prefs):
 				replyTimeDate = reply['now']
 
 				if imgEnable and 'tim' in reply:
-					imgUrl = "http://images.4chan.org/" + thread.getBoard() + "/src/" + str(reply['tim']) + reply['ext']
+					imgUrl = "http://i.4cdn.org/" + thread.getBoard() + "/src/" + str(reply['tim']) + reply['ext']
 					print indentText(aaFuncs.urlToAscii(imgUrl, prefs, indent = True), indent)
 
 				print getSpaces(indent) + TermColor.cyan + "No. " + str(replyNum) + ' ' + TermColor.purple + replyTimeDate + TermColor.reset
@@ -137,7 +137,7 @@ def printThread(thread, prefs):
 		postTimeDate = post['now']
 
 		if imgEnable and 'tim' in post:
-			imgUrl = "http://images.4chan.org/" + thread.getBoard() + "/src/" + str(reply['tim']) + reply['ext']
+			imgUrl = "http://i.4cdn.org/" + thread.getBoard() + "/src/" + str(reply['tim']) + reply['ext']
 			print aaFuncs.urlToAscii(imgUrl, prefs)
 
 		print TermColor.cyan + "No. " + str(postNum) + ' ' + TermColor.purple + postTimeDate + TermColor.reset
